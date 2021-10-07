@@ -11,10 +11,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CreateItemRequest {
+public class CartItemDto {
     private UUID id;
-    private String name;
-    private String description;
-    private Double price;
-
+    private UUID user_id;
+    private UUID item_id;
 }

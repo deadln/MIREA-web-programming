@@ -2,22 +2,23 @@ package mirea.web.lab1.service;
 
 import mirea.web.lab1.dto.ItemToCartRequest;
 import mirea.web.lab1.dto.CreateItemRequest;
-import mirea.web.lab1.dto.Item;
+import mirea.web.lab1.dto.ItemDto;
 
 import java.util.List;
+import java.util.UUID;
 
 public interface HttpService {
     List getItems();
 
-    Item getItem(Integer id);
+    ItemDto getItem(UUID id);
 
-    List getCart();
+    List getCart(UUID user_id);
 
     void addItem(CreateItemRequest request);
 
-    void delItem(Integer id);
+    void delItem(UUID id);
 
-    void addItemToCart(ItemToCartRequest request);
+    void addItemToCart(UUID user_id, ItemToCartRequest request);
 
-    void delItemFromCart(ItemToCartRequest request);
+    void delItemFromCart(UUID user_id, ItemToCartRequest request);
 }
