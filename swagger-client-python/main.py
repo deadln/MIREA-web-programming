@@ -15,10 +15,6 @@ window.geometry('400x250')
 txt = scrolledtext.ScrolledText(window, width=40, height=10)
 txt.grid(column=0, row=0)
 
-txt.insert(INSERT, 'DO')
-txt.insert(INSERT, 'YOU')
-txt.insert(INSERT, 'SUCK')
-txt.insert(INSERT, 'DICKS?')
 
 # create an instance of the API class
 api_instance = swagger_client.MainControllerApi(swagger_client.ApiClient())

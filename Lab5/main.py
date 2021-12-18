@@ -132,9 +132,6 @@ tab_control.pack(expand=1, fill='both')
 
 # Создание вкладки каталога
 catalog_listbox = Listbox(tab1, height=30, width=50)
-catalog_listbox.insert(END, 'хуй')
-catalog_listbox.insert(END, 'залупа')
-catalog_listbox.insert(END, 'пенис')
 open_button1 = ttk.Button(tab1, text='Открыть', command=open_from_catalog)
 add_to_cart_button = ttk.Button(tab1, text='Добавить в корзину', command=add_to_cart)
 update_button1 = ttk.Button(tab1, text='Обновить', command=update_catalog)
@@ -150,9 +147,6 @@ user_id_entry1.grid(column=1, row=4)
 
 # Создание вкладки корзины
 cart_listbox = Listbox(tab2, height=30, width=50)
-cart_listbox.insert(END, 'хуй')
-cart_listbox.insert(END, 'залупа')
-cart_listbox.insert(END, 'пенис')
 open_button2 = ttk.Button(tab2, text='Открыть', command=open_from_cart)
 del_from_cart_button = ttk.Button(tab2, text='Удалить из корзины', command=del_from_cart)
 update_button2 = ttk.Button(tab2, text='Обновить', command=update_cart)
